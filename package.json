@@ -3,6 +3,15 @@
   "version": "1.0.0",
   "description": "Check’d production monitoring for Node.js: errors and custom events, with Express, Fastify and AdonisJS helpers.",
   "license": "MIT",
+  "author": "TwelveAI (https://twelveai.app)",
+  "homepage": "https://getchecked.twelveai.app/docs/monitoring",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laozofficial/checked-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Laozofficial/checked-node/issues"
+  },
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -16,7 +25,8 @@
   },
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "engines": {
     "node": ">=18"
@@ -24,12 +34,16 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm test"
   },
   "devDependencies": {
     "@types/node": "22.9.0",
     "esbuild": "0.24.0",
     "typescript": "5.6.3",
     "vitest": "2.1.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
