@@ -36,7 +36,7 @@ function init(extra: Record<string, unknown> = {}) {
   Checked.init({ key: 'ck_pub_node', endpoint: 'https://ingest.test', environment: 'test', release: '9.9.9', exitOnFatal: false, ...extra })
 }
 
-describe('@checked/node', () => {
+describe('checkd-node', () => {
   it('captureError sends the wire protocol', async () => {
     init()
     const err = new TypeError('bad thing token=abc123')

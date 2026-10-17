@@ -1,4 +1,4 @@
-// Copied from @checked/browser src/utils.ts (keep the privacy rules identical).
+// Copied from checkd-browser src/utils.ts (keep the privacy rules identical).
 export type Primitive = string | number | boolean
 
 export const LIMITS = {

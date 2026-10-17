@@ -1,5 +1,5 @@
 {
-  "name": "@checked/node",
+  "name": "checkd-node",
   "version": "1.0.0",
   "description": "Check’d production monitoring for Node.js: errors and custom events, with Express, Fastify and AdonisJS helpers.",
   "license": "MIT",

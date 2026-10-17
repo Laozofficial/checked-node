@@ -1,4 +1,4 @@
-// Same batching and retry rules as @checked/browser, without beacons or offline detection.
+// Same batching and retry rules as checkd-browser, without beacons or offline detection.
 
 export const MAX_BATCH = 50
 export const MAX_BODY_BYTES = 60 * 1024

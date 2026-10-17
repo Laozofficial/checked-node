@@ -1,9 +1,9 @@
-# @checked/node
+# checkd-node
 
-Check’d production monitoring for Node.js 18+ (uses the global `fetch`). Zero runtime dependencies. Same wire protocol as `@checked/browser`, see `../README.md`.
+Check’d production monitoring for Node.js 18+ (uses the global `fetch`). Zero runtime dependencies. Same wire protocol as `checkd-browser`, see `../README.md`.
 
 ```ts
-import { Checked, expressErrorHandler, fastifyErrorHook, adonisReport } from '@checked/node'
+import { Checked, expressErrorHandler, fastifyErrorHook, adonisReport } from 'checkd-node'
 
 Checked.init({ key: 'ck_pub_...', environment: 'production', release: process.env.GIT_SHA })
 
